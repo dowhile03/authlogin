@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+  <button onclick="signin()" id="signinn">Sign in with facebook</button>
+  <div style="text-align:center;" id="user-image"></div>
+  <h1 id="user-email" style="text-align: center;"></h1>
+  <h1 id="user-name" style="text-align: center;"></h1>
+  <button style="display:none;text-align: center;" onclick="signout()" id="sign-out">
+    SignOut
+</button>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDiUn8RrzTHOqGEiX4iSvc1dnvlT6Y-O80",
+    authDomain: "authlogin-7a111.firebaseapp.com",
+    databaseURL: "https://authlogin-7a111.firebaseio.com",
+    projectId: "authlogin-7a111",
+    storageBucket: "authlogin-7a111.appspot.com",
+    messagingSenderId: "220167900482",
+    appId: "1:220167900482:web:6e4fa1c1a24849d34d4cdb",
+    measurementId: "G-XY4R2TCKVX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html>
